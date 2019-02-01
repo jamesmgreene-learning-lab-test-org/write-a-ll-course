@@ -217,29 +217,7 @@ steps:
     body: |
       ```suggestion
       - type: createIssue
-      ```
-    position: 7
-  - type: octokit
-    method: pullRequests.createComment
-    owner: '%actions.stepsPR.data.head.repo.owner.login%'
-    repo: '%actions.stepsPR.data.head.repo.name%'
-    number: '%actions.stepsPR.data.number%'
-    commit_id: '%actions.stepsPR.data.head.sha%'
-    path: config.yml
-    body: |
-      ```suggestion
         title: Welcome
-      ```
-    position: 8
-  - type: octokit
-    method: pullRequests.createComment
-    owner: '%actions.stepsPR.data.head.repo.owner.login%'
-    repo: '%actions.stepsPR.data.head.repo.name%'
-    number: '%actions.stepsPR.data.number%'
-    commit_id: '%actions.stepsPR.data.head.sha%'
-    path: config.yml
-    body: |
-      ```suggestion
         body: welcome-text.md
       ```
     position: 9
@@ -304,17 +282,6 @@ steps:
     body: |
       ```suggestion
       - title: Create a new PR
-      ```
-    position: 19
-  - type: octokit
-    method: pullRequests.createComment
-    owner: '%payload.repository.owner.login%'
-    repo: '%payload.repository.name%'
-    number: '%payload.number%'
-    commit_id: '%payload.pull_request.head.sha%'
-    path: config.yml
-    body: |
-      ```suggestion
         description: Add your name to the README.md file in your new PR
       ```
     position: 20
@@ -409,29 +376,7 @@ steps:
     body: |
       ```suggestion
           left: '\%payload.pull_request.title\%'
-      ```
-    position: 33
-  - type: octokit
-    method: pullRequests.createComment
-    owner: '%payload.repository.owner.login%'
-    repo: '%payload.repository.name%'
-    number: '%payload.number%'
-    commit_id: '%payload.pull_request.head.sha%'
-    path: config.yml
-    body: |
-      ```suggestion
           operator: ===
-      ```
-    position: 34
-  - type: octokit
-    method: pullRequests.createComment
-    owner: '%payload.repository.owner.login%'
-    repo: '%payload.repository.name%'
-    number: '%payload.number%'
-    commit_id: '%payload.pull_request.head.sha%'
-    path: config.yml
-    body: |
-      ```suggestion
           right: Add name to README
       ```
     position: 35
@@ -466,17 +411,6 @@ steps:
     body: |
       ```suggestion
         - type: respond
-      ```
-    position: 36
-  - type: octokit
-    method: pullRequests.createComment
-    owner: '%payload.repository.owner.login%'
-    repo: '%payload.repository.name%'
-    number: '%payload.number%'
-    commit_id: '%payload.pull_request.head.sha%'
-    path: config.yml
-    body: |
-      ```suggestion
           with: pr-opened.md
       ```
     position: 37
