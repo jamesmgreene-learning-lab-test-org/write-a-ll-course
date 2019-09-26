@@ -1,4 +1,4 @@
-Minor version bump !
+Minor version bump from git!
 
 Learning Lab helps people build real world skills through hands-on activities. This course streamlines the course building process, and gives you all the tools you need to help others learn. 
 
