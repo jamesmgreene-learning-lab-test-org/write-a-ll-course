@@ -1,5 +1,5 @@
 title: Write a Learning Lab course
-tagline: Learn how to author your own Learning Lab course. Major version bump from git cmd!
+tagline: Learn how to author your own Learning Lab course. Major version bump from dotcom!
 description: Get starter code, or let the Learning Lab bot guide you as you author your first course.
 template:
   name: lab-starter
